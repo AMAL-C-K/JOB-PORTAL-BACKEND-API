@@ -42,13 +42,13 @@ User / Registration
 ________________________________________
 Jobs
 
-  Method	        -           Endpoint	    -          Description	            -        Access
--  GET	          -           /jobs/	      -     List all jobs (Paginated)	    -      Public / Auth
--  POST	          -           /jobs/	      -         Create new job	          -      Employer only
--  GET	          -         /jobs/<id>/	    -     Get single job details	      -         Auth
--  PUT	          -         /jobs/<id>/	    -          Update job	              -      Owner Employer
-- DELETE	        -         /jobs/<id>/	    -          Delete job	              -      Owner Employer
--  GET	          -       /employer/jobs/	  -     View employer’s own jobs	    -      Employer only
+  Method	        -           Endpoint	         -          Description	              -        Access
+-  GET	          -           /jobs/	           -     List all jobs (Paginated)	    -      Public / Auth
+-  POST	          -           /jobs/	           -         Create new job	            -      Employer only
+-  GET	          -         /jobs/<id>/	         -     Get single job details	        -         Auth
+-  PUT	          -         /jobs/<id>/	         -          Update job	              -      Owner Employer
+- DELETE	        -         /jobs/<id>/	         -          Delete job	              -      Owner Employer
+-  GET	          -       /employer/jobs/	       -     View employer’s own jobs	      -      Employer only
 ________________________________________
 Applications
 
