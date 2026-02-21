@@ -30,6 +30,7 @@ ________________________________________
 Main Endpoints
 
 Authentication (JWT)
+
   Method	    -         Endpoint	        -            Description
 -  POST	      -       /api/token/	        -     Obtain Access & Refresh Token
 -  POST	      -   /api/token/refresh/	    -        Refresh Access Token
