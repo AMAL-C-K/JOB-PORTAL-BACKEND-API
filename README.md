@@ -36,26 +36,29 @@ Authentication (JWT)
 -  POST	      -   /api/token/refresh/	    -        Refresh Access Token
 ________________________________________
 User / Registration
-  Method	         Endpoint	                     Description
--  POST	          /register/	       Register new user (Employer / Candidate)
+
+  Method	    -     Endpoint	   -                  Description
+-  POST	      -    /register/	   -    Register new user (Employer / Candidate)
 ________________________________________
 Jobs
-  Method	                   Endpoint	             Description	                  Access
--  GET	                     /jobs/	          List all jobs (Paginated)	       Public / Auth
--  POST	                     /jobs/	               Create new job	             Employer only
--  GET	                   /jobs/<id>/	       Get single job details	             Auth
--  PUT	                   /jobs/<id>/	              Update job	             Owner Employer
-- DELETE	                 /jobs/<id>/	              Delete job	             Owner Employer
--  GET	                 /employer/jobs/	     View employer’s own jobs	        Employer only
+
+  Method	        -           Endpoint	    -          Description	            -        Access
+-  GET	          -           /jobs/	      -     List all jobs (Paginated)	    -      Public / Auth
+-  POST	          -           /jobs/	      -         Create new job	          -      Employer only
+-  GET	          -         /jobs/<id>/	    -     Get single job details	      -         Auth
+-  PUT	          -         /jobs/<id>/	    -          Update job	              -      Owner Employer
+- DELETE	        -         /jobs/<id>/	    -          Delete job	              -      Owner Employer
+-  GET	          -       /employer/jobs/	  -     View employer’s own jobs	    -      Employer only
 ________________________________________
 Applications
-  Method	                    Endpoint	                      Description	                       Access
-- POST	                  /apply/<job_id>/	                Apply for a job	                 Candidate only
--  GET	               /candidate/applications/	     View candidate’s own applications	     Candidate only
--  GET	               /employer/applications/	     View all applications for employer       Employer only
-                                                                jobs	
--  GET	              /jobs/<job_id>/applicants/	    View applicants for specific job	     Owner Employer
-- PATCH	                /applications/<id>/	          Accept / Reject application	           Owner Employer
+
+  Method	    -                Endpoint	            -              Description	                 -        Access
+- POST	      -            /apply/<job_id>/	        -            Apply for a job	               -     Candidate only
+-  GET	      -         /candidate/applications/	  -    View candidate’s own applications	     -     Candidate only
+-  GET	      -         /employer/applications/	    -    View all applications for employer      -     Employer only
+                                                                      jobs	
+-  GET	      -        /jobs/<job_id>/applicants/	  -    View applicants for specific job	       -     Owner Employer
+- PATCH	      -          /applications/<id>/	      -      Accept / Reject application	         -     Owner Employer
 
 ________________________________________
 
